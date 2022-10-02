@@ -1,0 +1,207 @@
+/* 
+
+1)TYPOGRAPHY SYSTEM
+-FONT SIZE(px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+Font-weights
+  Default:400
+  semi-bold:500
+  semi-bold:500
+  bold:700
+
+-Line Heights
+  Default:1
+  Small:1.05
+  medium:1.2
+  Paragraph:1.6
+
+-Letter-spacing:
+- -0.5px
+- 0.75px
+
+2)COLORS:
+  Primary:
+  
+  Tints:
+
+
+  Shades:
+  
+  Accents:
+
+  Greys:#555
+  #333
+  #888
+  #6f6f6f (lightest Grey allowed on this one #fdf2e9)
+  #767676 (lightest Grey allowed on #fff)
+
+3)IMAGES:
+
+4)ICONS:
+
+5)SHADOWS:
+
+6)BORDER-RADIUS:
+Default:9px
+medium:11px
+large:100px
+
+7)WHITE-SPACES:
+  SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size:10px */
+  /* 10 / 16=0.625=62.5 */
+  /* so font-size=62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+body {
+  background-color: hsl(222, 26%, 31%);
+  font-family: "League Spartan", sans-serif;
+}
+.container {
+  max-width: 50rem;
+  margin: 10rem auto;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+.calc-text {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.theme-text {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+.btn-container {
+  width: 6rem;
+  height: 2.6rem;
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 12px;
+  position: relative;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.circle {
+  position: absolute;
+  width: 30%;
+  height: 70%;
+  background-color: hsl(6, 63%, 50%);
+  border-radius: 50%;
+  top: 3px;
+  left: 8px;
+  transition: all 0.2s linear;
+}
+.circle.click {
+  margin-left: 1rem;
+}
+.circle.doubleclick {
+  margin-left: 1rem;
+}
+.result {
+  width: 100%;
+  height: auto;
+  background-color: hsl(224, 36%, 15%);
+  height: 10rem;
+  border-radius: 8px;
+  margin-bottom: 1.8rem;
+  outline: none;
+  font-size: 5rem;
+  color: #fff;
+  text-align: right;
+  padding: 3rem;
+  font-weight: 700;
+  border: none;
+}
+.keys {
+  width: 100%;
+  background-color: hsl(223, 31%, 20%);
+  padding: 2.8rem 1.2rem;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 0;
+  place-items: center;
+  row-gap: 1.2rem;
+}
+.btn {
+  font-size: 2.6rem;
+  height: 4.5rem;
+  border-radius: 6px;
+  border: none;
+  width: 75%;
+  font-weight: 700;
+  color: hsl(221, 14%, 31%);
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: inset 0 -10px 20px -10px hsl(28, 16%, 65%);
+}
+.btn:hover {
+  background-color: #fff;
+}
+.btn.span {
+  background-color: hsl(224, 28%, 35%);
+  box-shadow: inset 0 -10px 20px -10px hsl(224, 28%, 35%);
+  color: #fff;
+}
+.btn.span:hover {
+  background-color: hsl(225, 21%, 49%);
+}
+.column {
+  grid-column: 1/3;
+  width: 88%;
+}
+.row {
+  grid-column: 3/5;
+  background-color: hsl(6, 70%, 34%);
+  box-shadow: inset 0 -10px 20px -10px hsl(6, 70%, 34%);
+  width: 88%;
+}
+.row:hover {
+  background-color: hsl(6, 63%, 50%);
+}
+input {
+  width: 60%;
+  height: 92%;
+  appearance: none;
+  background-color: hsl(6, 63%, 50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+input:hover {
+  cursor: pointer;
+}
+.tri-state-toggle {
+  display: flex;
+  justify-content: center;
+  border: 3px solid hsl(224, 36%, 15%);
+  margin-left: 1rem;
+  border-radius: 50px;
+  width: 6rem;
+  height: 2.6rem;
+  position: relative;
+  background-color: hsl(224, 36%, 15%);
+}
+#one {
+  opacity: 1;
+}
