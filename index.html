@@ -1,1 +1,66 @@
   
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="nav-container">
+          <div>
+            <p class="calc-text">calc</p>
+          </div>
+          <div class="flex-container">
+            <div class="text">
+              <p class="theme-text">theme</p>
+            </div>
+            <div class="btn-container">
+              <span class="circle"></span>
+            </div>
+
+            <!-- <div class="tri-state-toggle">
+              <input class="button" type="radio" name="toggle" id="one" />
+              <input class="button" type="radio" name="toggle" id="two" />
+              <input class="button" type="radio" name="toggle" id="three" />
+            </div> -->
+          </div>
+        </div>
+        <div class="result-calc">
+          <div class="result">0</div>
+        </div>
+        <div class="keys">
+          <button class="btn">7</button>
+          <button class="btn">8</button>
+          <button class="btn">9</button>
+          <button class="btn span" data-action="del">DEL</button>
+          <button class="btn">4</button>
+          <button class="btn">5</button>
+          <button class="btn">6</button>
+          <button class="btn" data-action="addition">+</button>
+          <button class="btn">1</button>
+          <button class="btn">2</button>
+          <button class="btn">3</button>
+          <button class="btn" data-action="substraction">-</button>
+
+          <button class="btn" data-action="decimal">.</button>
+          <button class="btn">0</button>
+          <button class="btn" data-action="divide">&divide;</button>
+          <button class="btn" data-action="multiply">&times;</button>
+          <button class="btn span column" data-action="reset">RESET</button>
+          <button class="btn row" data-action="calculate">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
